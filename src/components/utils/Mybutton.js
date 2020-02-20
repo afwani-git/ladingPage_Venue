@@ -3,13 +3,13 @@ import TicketIcon from "../../resoursces/images/icons/ticket.png";
 import Button from "@material-ui/core/Button";
 
 const Mybutton = (props) => {
-  return (
-  	<Button
+    return (
+        <Button
   		href={props.link}
   		variant="contained"
   		size={props.size}
   		style={{
-  			background:props.bg,
+  			backgroundColor:props.bg,
   			color:props.color
   		}}
   	>
@@ -20,7 +20,7 @@ const Mybutton = (props) => {
   		/>
   		{props.text}
   	</Button>
-  )
+    )
 }
 
 export default Mybutton;
