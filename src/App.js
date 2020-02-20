@@ -7,17 +7,36 @@ import Highlights from './components/Highlights';
 import Pricing from './components/pricing';
 import Location from './components/location';
 import Footer from './components/header_footer/Footer';
+import { Element } from 'react-scroll';
 
 function App() {
   return (
     <div className="App" style={{backgroundColor:'yellow',height:'1300px'}}>
-      <Header/>
-      <Featured/>
-      <VunueNfo/>
-      <Highlights/>
-      <Pricing/>
-      <Location/>
-      <Footer/>
+
+      <Element name="Event">
+        <Header/>
+        <Featured/>
+      </Element>
+
+      <Element name="Vunue">
+        <VunueNfo/>
+      </Element>
+
+      <Element name="Highlights">
+        <Highlights/>
+      </Element>
+
+      <Element name="Pricing">
+        <Pricing/>
+      </Element>
+
+      <Element name="Location">
+        <Location/>
+      </Element>
+
+      <Element name="Footer">
+        <Footer/>
+      </Element>
     </div>
   );
 }
